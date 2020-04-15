@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swiper</title>
+</head>
+<link rel="stylesheet" href="./css/init.css">
+<link rel="stylesheet" href="./css/bs.css">
+<link rel="stylesheet" href="./css/spiper.css"> 
+<link rel="stylesheet" href="./css/index.css">
+<body>
+  <div class="index-box">
+    <!-- 头部 -->
+    <div class="top-box">
+      <div class="header-box">
+        <div class="list-item">
+          <p class="list-item-font1">谢沅航哈哈</p>
+          <p class="list-item-font2">aabbcc</p>
+        </div> 
+        <div class="list-item">
+          <p class="list-item-font1">谢沅航哈哈</p>
+          <p class="list-item-font2">aabbcc</p>
+        </div> 
+        <div class="list-item list-item-img">
+          <img src="#" alt="">
+        </div>
+        <div class="list-item">
+          <p class="list-item-font1">谢沅航哈哈</p>
+          <p class="list-item-font2">aabbcc</p>
+        </div> 
+        <div class="list-item">
+          <p class="list-item-font1">谢沅航哈哈</p>
+          <p class="list-item-font2">aabbcc</p>
+        </div> 
+      </div>
+    </div>
+    <!-- 轮播 -->
+    <div class="swiper-box">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+ 
+      </div>
+    </div>
+    <!-- 栅格 -->
+    <div class="row">
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div> 
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div>
+      <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">.col-lg-4 col-md-3 col-sm-6 col-xs-6</div> 
+    </div>
+  </div>
+</body> 
+<script src="./js/swiper.js"> </script>
+<script src="./js/jquery.js"></script>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    
+  })
+</script>
+
+</html>
