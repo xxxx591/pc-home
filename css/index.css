@@ -1,29 +1,217 @@
+.index-box{
+    background: #2e2e2e;
+    overflow: hidden;
+}
 /* 头部 */
 .header-box{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+}
+.top-box{
+    background: #000;
+    height: 140px;
+    align-items: center;
     display: flex;
 }
 .list-item{
     flex: 1;
     text-align: center;
-
+    cursor: pointer;
 }
 .list-item-font1{
+    color: #cba28a;
     letter-spacing: 2px;
     font-size: 16px;
 }
 .list-item-font2{
+    color: #cba28a;
     font-size: 14px;
 }
 
 .list-item-img img{
     display: inline-flex;
-    min-width: 60px;
-    height: 40px;
-    border:1px solid #efefef;
+    min-width: 75px;
+    height: 75px;
 }
 .swiper-container {
     /* max-width: 600px; */
-    height: 300px;
+    max-height: 800px;
+    --swiper-navigation-color: #454545;/* 单独设置按钮颜色 */
+    --swiper-navigation-size: 62px;/* 设置按钮大小 */
+    --swiper-theme-color: #454545;
+    --swiper-pagination-color: #454545;/* 两种都可以 */
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 10px;
+    left: 50%;
+    width: 150px;
+    background: #fff;
+    opacity: 0.17;
+    border-radius: 20px;
+    margin-left: -75px;
+
+}
+.swiper-slide img{
+    width: 100%;
+} 
+.row-box{
+    padding: 10%;
+    background: #2e2e2e;
+}
+.item-s{
+    position: relative; 
+}
+
+.s-1{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.5);
+    text-align: center;
+    padding-top: 72px;
+}
+.s-1:nth-of-type(1){
+    font-weight: bold;
+    font-family: SourceHanSansCN-Heavy;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    width: 100%;
+}
+.s-1:nth-of-type(2){
+    font-weight: bold;
+    font-family: SourceHanSansCN-Heavy;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    width: 100%;
+}
+ 
+.s-2{
+    width: 100%;
+    height: 100%;
+    /* background: url('../image/zuopin.png')no-repeat center; */
+    background-size: cover;
+}
+ .s-2 img{
+     width: 100%; 
+ }
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+     padding-right: 0px; 
+     padding-left: 0px;
+}
+.banner-box{
+    text-align: center;
+    padding: 20px;
+    background: #2e2e2e;
+}
+.title2-p-1{
+    color: #cba28a;
+    letter-spacing: 2px; 
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.title2-p-2{
+    color: #cba28a;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+}
+.banner-2{
+    width: 100%;
+ 
+}
+.banner-2 img{
+    width: 100%;
+}
+.banner-3{
+    padding: 80px 0;
+    text-align: center;
+}
+.banner-3 a{
+    color: #c9c9c9;
+    text-decoration: underline;
+}
+.banner-4{
+    text-align: center;
+    padding:  150px 0;
+}
+.banner-5{
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.sit-logo img{
+    width: 72px;
+    height: 72px;
+    margin-bottom: 50px;
+}
+.sit-logo p{
+    color: #c9c9c9;
+    font-size: 18px;
+}
+.banner-6{
+    display: flex;
+    margin: 0 10%;
+    justify-content: center;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+.banner-6 .title2{
+    width: 100%;
+}
+.banner-6-1{
+    width: 80%;
+}
+.banner-6-1 img{
+    margin-top: 60px;
+    width: 100%;
+}
+.title3{
+    font-size: 16px;
+    color: #c9c9c9;
+    line-height: 28px;
+    margin-top: 70px;
+}
+.banner-7{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+}
+
+.bottom-1{
+    flex: 1;
+    margin-right: 13px;
+}
+.bottom-2{
+    flex: 1.4;
+    margin-left: 50px;
+}
+.bottom-2 .title2-p-1{
+    text-align: left;
+}
+.bottom-2 .title2-p-2{
+    text-align: left;
+}
+
+.bottom-3{
+    text-align: center;
+    flex: 1;
+}
+.bottom-3 img{
+    width: 50%;
+}
+.bottom-2-3 p{
+    color: #4e4e4e;
+    border-bottom: 1px solid #4e4e4e;
+}
+.bottom-2-3 p span{
+    color: #cba28a;
 }
