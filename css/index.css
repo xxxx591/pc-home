@@ -189,6 +189,10 @@
 .bottom-1{
     flex: 1;
     margin-right: 13px;
+    max-width: 30%;
+}
+.bottom-1 img{
+    width: 100%;
 }
 .bottom-2{
     flex: 1.4;
