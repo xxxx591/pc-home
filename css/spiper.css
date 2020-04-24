@@ -166,6 +166,7 @@
   letter-spacing: 0;
   text-transform: none;
   font-variant: initial;
+  outline: none;
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
