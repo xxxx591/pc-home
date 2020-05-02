@@ -1,10 +1,17 @@
+html{
+    font-size: 12px;
+}
+@font-face{
+    font-family: 'heavy';
+    src : url('../css/SourceHanSansCN-Heavy.otf');
+}
 .index-box{
     background: #2e2e2e;
     overflow: hidden;
 }
 /* 头部 */
 .header-box{
-    max-width: 1200px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -25,6 +32,14 @@
     letter-spacing: 2px;
     font-size: 16px;
 }
+.list-item-font1 a{
+    color: #cba28a;
+    text-decoration: none;
+}
+.list-item-font2 a{
+    color: #cba28a;
+    text-decoration: none;
+}
 .list-item-font2{
     color: #cba28a;
     font-size: 14px;
@@ -36,8 +51,8 @@
     height: 75px;
 }
 .swiper-container {
-    /* max-width: 600px; */
-    max-height: 800px;
+    /* max-width: 1920px;
+    max-height: 800px; */
     --swiper-navigation-color: #454545;/* 单独设置按钮颜色 */
     --swiper-navigation-size: 62px;/* 设置按钮大小 */
     --swiper-theme-color: #454545;
@@ -62,29 +77,38 @@
 }
 .item-s{
     position: relative; 
+    cursor: pointer;
 }
-
+.item-s:hover .s-1{
+    opacity: 1;
+}
 .s-1{
-    display: none;
     position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.8);
     text-align: center;
-    padding-top: 72px;
+    opacity: 0;
+    transition: 1s;
+    font-family: heavy;
 }
 .s-1:nth-of-type(1){
     font-weight: bold;
-    font-family: SourceHanSansCN-Heavy;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: normal;
     font-stretch: normal;
     width: 100%;
 }
 .s-1:nth-of-type(2){
     font-weight: bold;
-    font-family: SourceHanSansCN-Heavy;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: normal;
     font-stretch: normal;
     width: 100%;
@@ -92,13 +116,12 @@
  
 .s-2{
     width: 100%;
-    height: 100%;
-    /* background: url('../image/zuopin.png')no-repeat center; */
-    background-size: cover;
+    overflow: hidden;
 }
- .s-2 img{
-     width: 100%; 
- }
+.s-2 img{
+    width: 100%; 
+    vertical-align: middle;
+}
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
      padding-right: 0px; 
      padding-left: 0px;
@@ -127,6 +150,7 @@
 }
 .banner-2 img{
     width: 100%;
+    
 }
 .banner-3{
     padding: 80px 0;
@@ -181,18 +205,28 @@
 }
 .banner-7{
     display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
-    align-items: center;
+    /* justify-content: space-between; */
+        padding: 40px 5%;
+        background: #000;
+		/* align-items: center; */
+    /* align-items: center; */
 }
 
 .bottom-1{
     flex: 1;
-    margin-right: 13px;
+   /* margin-right: 13px; */
+    max-width: 80%;
+    /* margin: 0 auto; */
+    /* text-align: center; */
 }
-.bottom-2{
+.bottom-1 img{
+    width: 60%;
+}
+.bottom-2{1
     flex: 1.4;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    /* margin-left: 40px; */
+    min-width: 400px;
 }
 .bottom-2 .title2-p-1{
     text-align: left;
@@ -202,16 +236,37 @@
 }
 
 .bottom-3{
-    text-align: center;
+	width: 28%;
+    text-align: right;
     flex: 1;
+    float: right;
 }
 .bottom-3 img{
-    width: 50%;
+    width: 60%;
 }
 .bottom-2-3 p{
     color: #4e4e4e;
     border-bottom: 1px solid #4e4e4e;
+    margin-bottom: 30px;
 }
 .bottom-2-3 p span{
     color: #cba28a;
+}
+@media (max-width: 991px){
+    .row-box{
+        padding: 5% 0;
+		/* display: flex; */
+		/* flex-direction: column; */
+    }
+	.banner-7{
+		display: flex;
+		flex-direction: column;
+	}
+	.bottom-3{
+		width: 70%;
+		text-align: left;
+	}
+}
+.bottom-2-3 {
+    margin-top: 50px;
 }
