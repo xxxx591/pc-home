@@ -99,6 +99,9 @@ html{
     transition: 1s;
     font-family: heavy;
 }
+.s-1 p{
+    width: 100%;
+}
 .s-1:nth-of-type(1){
     font-weight: bold;
     font-size: 2rem;

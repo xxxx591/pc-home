@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  let str = `
+	14-2轴交14-K轴基础底标高：531.995m;相对标高：0.815m、14-4轴交14-K轴基础底标高：531.91m;相									
+	对标高：0.9m、14-2轴交14-J轴基础底标高：531.36m;相对标高：1.39m、14-4轴交14-J轴基础底标高									
+        ：531.36m;相对标高：1.39m、14-2轴14-H轴基础底标高：531.36m;相对标高：1.39m、14-4轴交14-H轴										
+	基础底标高:531.3m;相对标高：1.45m、14-2轴交14-F轴基础底标高：531.29m;相对标高：1.45m、									
+						
+
+
+`
+let reg = '/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g'
+let reg2 = '/[^\u4e00-\u9fa5a-zA-Z,\.，。]/g'
+  // str =  str.replace(reg,'')
+  // str =  str.replace(reg2,'')
+  str = str.split('轴基础底标高')
+  console.log(str);
+</script>
+</html>
