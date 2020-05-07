@@ -1,0 +1,80 @@
+.banner-box-top {
+  width: 100%;
+  padding-bottom: 140px;
+}
+
+.banner-box-top img {
+  width: 100%;
+}
+
+.sit-logo {
+  margin-right: 80px;
+  flex: 1;
+}
+.sit-logo:last-of-type{
+  margin-right: 0px;
+  width: 250px;
+}
+.sit-logo .p-1 {
+  color: #2e2e2e;
+  font-size: 22px;
+  background: #cba28a;
+  padding: 30px 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+ 
+
+.sit-logo .p-2 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+.banner-4 {
+  padding-bottom: 0;
+}
+
+.banner-6 .title3 {
+  width: 100%;
+}
+
+.banner-6 img {
+  width: 100%;
+}
+
+.title5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title5 .ipt-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ipt-box input {
+  border: 1px solid #cba28a;
+  padding: 10px;
+  margin: 20px;
+  width: 250px;
+}
+
+.ipt-box textarea {
+  border: 1px solid #cba28a;
+  width: 540px;
+  padding: 10px;
+}
+
+.title5 button {
+  color: #2e2e2e;
+  font-size: 26px;
+  background: #cba28a;
+  padding: 15px 50px;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}

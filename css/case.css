@@ -1,0 +1,17 @@
+.row-list-box{
+  display: flex;
+  justify-content: right;
+}
+.row-list-box ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+
+}
+.row-list-box ul li a{
+  color: #cba28a;
+  font-size: 30px;
+  padding: 10px;
+  text-decoration: none;
+}

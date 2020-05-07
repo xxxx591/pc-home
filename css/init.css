@@ -35,15 +35,11 @@ div {
   box-sizing: border-box;
 }
 
-body {
-
-  font-family: "Alternate", "PingFangSC-Regular";
-}
-
 @font-face {
-  font-family: 'DINAlternate-Bold';
-  src: '../font/DINAlternateBold.ttf';
-}
+  font-family: DINAlternate;
+  src: '../font/SourceHanSansCN-Normal.otf';
+} 
+
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -55,6 +51,9 @@ html,
 body {
   height: 100%;
   box-sizing: border-box;
+  font-family: DINAlternate;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 input,

@@ -1,13 +1,20 @@
 html{
     font-size: 12px;
 }
+@font-face{
+    font-family: 'heavy';
+    src : url('../font/SourceHanSansCN-Heavy.otf');
+}
+body{
+    font-family: heavy;
+}
 .index-box{
     background: #2e2e2e;
     overflow: hidden;
 }
 /* 头部 */
 .header-box{
-    max-width: 1200px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -47,8 +54,8 @@ html{
     height: 75px;
 }
 .swiper-container {
-    /* max-width: 600px; */
-    max-height: 800px;
+    /* max-width: 1920px;
+    max-height: 800px; */
     --swiper-navigation-color: #454545;/* 单独设置按钮颜色 */
     --swiper-navigation-size: 62px;/* 设置按钮大小 */
     --swiper-theme-color: #454545;
@@ -93,10 +100,13 @@ html{
     text-align: center;
     opacity: 0;
     transition: 1s;
+    font-family: heavy;
+}
+.s-1 p{
+    width: 100%;
 }
 .s-1:nth-of-type(1){
     font-weight: bold;
-    font-family: SourceHanSansCN-Heavy;
     font-size: 2rem;
     font-weight: normal;
     font-stretch: normal;
@@ -104,7 +114,6 @@ html{
 }
 .s-1:nth-of-type(2){
     font-weight: bold;
-    font-family: SourceHanSansCN-Heavy;
     font-size: 2rem;
     font-weight: normal;
     font-stretch: normal;
@@ -167,6 +176,10 @@ html{
     justify-content: space-around;
     padding-top: 100px;
 }
+.sit-logo{
+    text-align: center;
+    width: 200px;
+}
 .sit-logo img{
     width: 72px;
     height: 72px;
@@ -175,6 +188,7 @@ html{
 .sit-logo p{
     color: #c9c9c9;
     font-size: 18px;
+    text-align: center;
 }
 .banner-6{
     display: flex;
@@ -199,6 +213,7 @@ html{
     color: #c9c9c9;
     line-height: 28px;
     margin-top: 70px;
+    text-align: center;
 }
 .banner-7{
     display: flex;
@@ -219,7 +234,7 @@ html{
 .bottom-1 img{
     width: 60%;
 }
-.bottom-2{1
+.bottom-2{
     flex: 1.4;
     /* margin-left: 50px; */
     /* margin-left: 40px; */
@@ -244,6 +259,7 @@ html{
 .bottom-2-3 p{
     color: #4e4e4e;
     border-bottom: 1px solid #4e4e4e;
+    margin-bottom: 30px;
 }
 .bottom-2-3 p span{
     color: #cba28a;
@@ -262,4 +278,7 @@ html{
 		width: 70%;
 		text-align: left;
 	}
+}
+.bottom-2-3 {
+    margin-top: 50px;
 }
