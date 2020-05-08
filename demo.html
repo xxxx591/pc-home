@@ -1,28 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
+<style>
+  .correction-box {
+    color: #303133;
+  }
+
+  .correction-box p {
+    line-height: 30px;
+  }
+
+  .correction-box p span {
+    color: #F56C6C;
+  }
+
+  .correction-box .text-2 {
+    color: #909399;
+  }
+</style>
+
 <body>
-  
+  <div id="app">
+    <el-button type="text" @click="open">点击打开 Message Box</el-button>
+     
+  </div>
 </body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
-  let str = `
-	14-2轴交14-K轴基础底标高：531.995m;相对标高：0.815m、14-4轴交14-K轴基础底标高：531.91m;相									
-	对标高：0.9m、14-2轴交14-J轴基础底标高：531.36m;相对标高：1.39m、14-4轴交14-J轴基础底标高									
-        ：531.36m;相对标高：1.39m、14-2轴14-H轴基础底标高：531.36m;相对标高：1.39m、14-4轴交14-H轴										
-	基础底标高:531.3m;相对标高：1.45m、14-2轴交14-F轴基础底标高：531.29m;相对标高：1.45m、									
-						
+  new Vue({
+    el: '#app',
+    data: function () {
+      return {
+        visible: false,
+        userInfo: {
+          balance: '10',
+        },
+        textNum: '19251',
+        money: '3'
+      }
+    },
+    methods: {
+      open() {
+        let str = `<div class="correction-box">
+                    <p>就是标题：' <span>这就是标题</span> '</p>
+                    <p>就是作者：' <span>这就是作者</span> '</p>
+                    <p>这就是字数：' <span>19281</span> '字</p>
+                    <p>账户余额： <span>78</span> 元（余额不足, 需约4.5元）</p>
+                    <p>这收费标准：1.5元/千字</p>
+                    <hr></hr>
+                    <p class="text-2">注：由于"猎袭网"用户太多，提交成功后会排队一段时间，毕业季高峰时段排队时间会延长。 </p>
+                  </div>`
 
-
-`
-let reg = '/[\ |\~|\`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\-|\_|\+|\=|\||\\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?]/g'
-let reg2 = '/[^\u4e00-\u9fa5a-zA-Z,\.，。]/g'
-  // str =  str.replace(reg,'')
-  // str =  str.replace(reg2,'')
-  str = str.split('轴基础底标高')
-  console.log(str);
+        this.$confirm(str, '这是标题', {
+          dangerouslyUseHTMLString: true,
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+        }).then(() => {
+          this.$message({
+            type: 'success',
+            message: '提交成功'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '取消提交'
+          });
+        });
+      }
+    },
+  })
 </script>
+
 </html>

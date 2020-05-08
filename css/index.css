@@ -82,6 +82,9 @@ body{
     position: relative; 
     cursor: pointer;
 }
+.row a{
+    color: #333;
+}
 .item-s:hover .s-1{
     opacity: 1;
 }

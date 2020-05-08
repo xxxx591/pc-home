@@ -1,0 +1,25 @@
+.index-box {
+  position: relative;
+}
+
+.banner-box-top {
+  width: 1592px;
+  margin: 53px auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -796px;
+  z-index: 1;
+  padding-bottom: 0;
+}
+
+.news-details {
+  width: 1078px;
+  margin: 0 auto;
+  padding: 100px;
+  background: #212121;
+  z-index: 98222;
+  position: relative;
+  top: 400px;
+  margin-bottom: 400px;
+  color: #c8c8c8!important;
+}

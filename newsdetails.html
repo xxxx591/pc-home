@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1200,
+                initial-scale=0,
+                maximum-scale=0,
+                " />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <title>抹茶互动</title> 
+  </head>
+<link rel="stylesheet" href="./css/bs.css?v=20200507">
+<link rel="stylesheet" href="./css/init.css?v=20200507">
+<link rel="stylesheet" href="./css/spiper.css?v=20200507">
+<link rel="stylesheet" href="./css/index.css?v=20200507">
+<link rel="stylesheet" href="./css/methods.css?v=20200507">
+<link rel="stylesheet" href="./css/newsdetails.css?v=20200507">
+
+<body>
+  <div class="index-box">
+    <!-- 头部 -->
+    <div class="top-box">
+      <div class="header-box">
+        <div class="list-item">
+          <p class="list-item-font1"><a href="./case.html">广告作品</a></p>
+          <p class="list-item-font2"><a href="./case.html">ADVERtISING WORKS</a></p>
+        </div>
+        <div class="list-item">
+          <p class="list-item-font1"><a href="./methods.html">爆品方法</a></p>
+          <p class="list-item-font2"><a href="./methods.html">COMPANY METHODOLOGY</a></p>
+        </div>
+        <div class="list-item list-item-img">
+          <a href="./index.html">
+            <img src="./image/logo.png" alt="">
+          </a>
+        </div>
+        <div class="list-item">
+          <p class="list-item-font1"> <a href="./index.html#tag3">合作伙伴</a></p>
+          <p class="list-item-font2"><a href="./index.html#tag3">COOPERATIVE PARTNER</a></p>
+        </div>
+        <div class="list-item">
+          <p class="list-item-font1"><a href="./about.html">关于我们</a></p>
+          <p class="list-item-font2"><a href="./about.html">ABOUTS US</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="banner-box-top">
+      <img src="./image/methods-banner-news.png"   alt="">
+    </div>
+    
+
+    <!-- 新闻详情页 -->
+    <div class="news-details">
+      
+    </div>
+
+    <div class="banner-7 row">
+		<a  name="tag4"></a>
+      <div  class="bottom-1 col-md-3 col-xs-12" >
+        <img src="./image/map.png" alt="">
+      </div>
+      <div class="bottom-2 col-md-3 col-xs-12">
+        <div class="title2">
+          <p class="title2-p-1">联系我们</p>
+          <p class="title2-p-2">contact us</p>
+        </div>
+        <div class="bottom-2-3 ">
+          <p>地址：<span>北京市  朝阳区   曙光西里    甲6号院8号楼4层507</span></p>
+          <p>电话：<span>+86 010-56037666</span></p>
+          <p>邮箱：<span>hr.mc@25lady.net</span></p>
+        </div>
+      </div>
+      <div class="bottom-3 col-md-3 col-xs-12">
+        <img src="./image/logo.png" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/swiper.js"> </script>
+<script src="./js/jquery.js"></script>
+<script src="./news.js"></script>
+<script>
+  console.log('newsDetails',window.newsDetails);
+  $('.news-details').html(window.newsDetails)
+</script>
+
+</html>
