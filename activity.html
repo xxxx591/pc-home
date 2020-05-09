@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>关注有礼</title>
+</head>
+<link rel="stylesheet" href="/static/assets/css/wxActivity.css">
+
+<body>
+  <div class="activity-box">
+    <div class="a-1">
+
+      <p>立即领取每日免费额度</p>
+
+    </div>
+    <div class="a-2">
+      <p>用户名：</p>
+      <input type="text" id="account" placeholder="请输入您的用户名">
+    </div>
+    <div class="a-3">
+      <button type="button" onclick="receive()">立即领取</button>
+    </div>
+  </div>
+
+</body>
+
+<script src="/static/assets/jquery/jquery-3.2.1.min.js"></script>
+<script src="/static/assets/utils/layer.js"></script>
+<script>
+  function receive() {
+    var account = $("#account").val();
+    var source = QueryString('source')
+    console.log('source',source);
+    if (account === "") {
+      alert("用户名不能为空！")
+      return;
+    }
+
+    $.ajax({
+      cache: true,
+      type: "post",
+      url: "/blade-outapi/activity/receive",
+      data: JSON.stringify({
+        "account": account,
+        "source":source
+      }),
+      contentType: 'application/json',
+      error: function (request) {
+        alert("程序异常")
+      },
+      success: function (res) {
+        if (res.code === 200) {
+          alert("领取成功")
+        } else {
+          alert(res.msg)
+        }
+
+      }
+    });
+  }
+  function QueryString(item) {
+    'use strict';
+
+    var sValue = window.location.search.match(new RegExp('[\?\&]' + item + '=([^\&]*)(\&?)','i'));
+    // console.log('item',item);
+    // console.log('sValue',sValue);
+    return sValue ? sValue[1] : sValue;
+}
+
+</script>
+
+</html>
