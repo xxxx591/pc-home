@@ -1,13 +1,11 @@
-html{
-    font-size: 12px;
-}
 @font-face{
     font-family: 'heavy';
-    src : url('../font/SourceHanSansCN-Heavy.otf');
+    src : url('../css/SourceHanSansCN-Heavy.otf');
 }
-body{
-    font-family: heavy;
+html{
+ 
 }
+
 .index-box{
     background: #2e2e2e;
     overflow: hidden;
@@ -78,12 +76,12 @@ body{
     padding: 10%;
     background: #2e2e2e;
 }
+.row a{
+    color: #303133;
+}
 .item-s{
     position: relative; 
     cursor: pointer;
-}
-.row a{
-    color: #333;
 }
 .item-s:hover .s-1{
     opacity: 1;
@@ -107,6 +105,10 @@ body{
 }
 .s-1 p{
     width: 100%;
+}
+
+.s-1 p a {
+    color: #303133;
 }
 .s-1:nth-of-type(1){
     font-weight: bold;
@@ -179,10 +181,6 @@ body{
     justify-content: space-around;
     padding-top: 100px;
 }
-.sit-logo{
-    text-align: center;
-    width: 200px;
-}
 .sit-logo img{
     width: 72px;
     height: 72px;
@@ -191,7 +189,6 @@ body{
 .sit-logo p{
     color: #c9c9c9;
     font-size: 18px;
-    text-align: center;
 }
 .banner-6{
     display: flex;
@@ -216,7 +213,6 @@ body{
     color: #c9c9c9;
     line-height: 28px;
     margin-top: 70px;
-    text-align: center;
 }
 .banner-7{
     display: flex;

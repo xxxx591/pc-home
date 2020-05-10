@@ -1,12 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1200,
-                initial-scale=0,
-                maximum-scale=0,
-                " />
+    <meta name="viewport" content="width=1200,initial-scale=0,maximum-scale=0," />
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="black" name="apple-mobile-web-app-status-bar-style" />
     <meta content="telephone=no" name="format-detection" />
@@ -63,7 +59,7 @@
     </div>
    
     <div class="banner-4" > 
-      <div class="banner-5">
+      <!-- <div class="banner-5">
         <div class="sit-logo"> 
           <p class="p-1">被安利–感兴趣</p>
           <p class="p-2">社交媒体人对人的推荐是目前转化率最高的商品爆发形式,第一次接触到品 牌和商品的时候,颜值力决定性作用。 <br><br> 颜值力包括产品的包括产品的包装、材质、触感、作用、第三方背书、价值观洞察的设计。</p>
@@ -81,12 +77,14 @@
           <p class="p-1">体验–分享–二次认知</p>
           <p class="p-2">是否能够在满足消费者需求的前提下 提供“哇哦”惊喜点?</p>
         </div> 
-      </div>
+      </div> -->
+      <img src="./image/methods-banner3.png" alt="">
     </div>
     <div class="banner-6">
       
-      <div class="title3">
+      <div class="title3"  id="blank-url">
        <img src="./image/methods-banner2.png" alt="">
+       <a href="https://socialone.com.cn/explosive-marketing-matcha-report-2019/"  target="_blank" class="blank-url"></a>
       </div>
     </div>
     <div class="banner-6" >
@@ -94,8 +92,8 @@
       <div class="title2">
         <p class="title2-p-1">截至今日，爆品力方法论已经服务过这些品牌</p> 
       </div>
-      <div class="banner-6-1">
-        <img src="./image/banner3.png" alt="">
+      <div class="banner-6-1" id="hzhb">
+        <!-- <img src="./image/banner3.png" alt=""> -->
       </div>
     </div>
     <div class="banner-6">
@@ -103,18 +101,18 @@
         <p class="title2-p-1">一次伟大的合作，也许就从这次留言开始</p> 
       </div>
       <div class="title3 title5">
-         <div class="ipt-box">
-           <input type="text" placeholder="您的姓名">
-           <input type="text" placeholder="您的邮箱">
-         </div>
-         <div class="ipt-box">
-           <input type="text" placeholder="联系电话">
-           <input type="text" placeholder="公司名称">
-         </div>
-         <div class="ipt-box">
-           <textarea name="" id="" cols="30" rows="10" placeholder="加入一个活力的团队......"></textarea>
-         </div>
-         <button>发送邮件</button>
+        <div class="ipt-box">
+          <input type="text" id="username" placeholder="您的姓名">
+          <input type="text" id="job"  placeholder="您的邮箱">
+        </div>
+        <div class="ipt-box">
+          <input type="text" id="tel"  placeholder="联系电话">
+          <input type="text" id="slogan"  placeholder="公司名称">
+        </div>
+        <div class="ipt-box">
+          <textarea id="info" cols="30" rows="10" placeholder="您的需求......"></textarea>
+        </div>
+        <button id="savemsg">发送邮件</button>
       </div>
     </div>
     <div class="banner-7 row">
@@ -127,10 +125,10 @@
           <p class="title2-p-1">联系我们</p>
           <p class="title2-p-2">contact us</p>
         </div>
-        <div class="bottom-2-3 ">
-          <p>地址：<span>北京市  朝阳区   曙光西里    甲6号院8号楼4层507</span></p>
+        <div class="bottom-2-3 " id="callus">
+          <!-- <p>地址：<span>北京市  朝阳区   曙光西里    甲6号院8号楼4层507</span></p>
           <p>电话：<span>+86 010-56037666</span></p>
-          <p>邮箱：<span>hr.mc@25lady.net</span></p>
+          <p>邮箱：<span>hr.mc@25lady.net</span></p> -->
         </div>
       </div>
       <div class="bottom-3 col-md-3 col-xs-12">
@@ -141,6 +139,7 @@
 </body>
 <script src="./js/swiper.js"> </script>
 <script src="./js/jquery.js"></script>
+<script src="./js/data.js?v=0.1"></script>
 <script>
   var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal', // 垂直切换选项

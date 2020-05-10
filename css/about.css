@@ -36,10 +36,16 @@
   min-width: 250px;
   font-size: 18px;
   text-align: left;
+  font-family: none;
 }
 
 .user-list-box .user-center p {
   margin-bottom: 20px;
+}
+
+.title3{
+  margin: 70px 200px 0;
+  text-align: center;
 }
 
 .ss-1 {
@@ -58,7 +64,8 @@
 }
 
 .content-right p {
-  margin-bottom: 5 px;
+  margin-bottom: 5px;
+  font-family: none;
 }
 
 .banner-6 .news-list {
@@ -72,4 +79,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+#aboutus p{
+  margin-bottom: 30px;
 }

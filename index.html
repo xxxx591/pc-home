@@ -50,13 +50,13 @@
     <div class="swiper-box">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+         <!--  <div class="swiper-slide">
             <img src="./image/swiper1.png" alt="" srcset="">
           </div>
           <div class="swiper-slide">
             <img src="./image/swiper1.png" alt="" srcset=""></div>
           <div class="swiper-slide">
-            <img src="./image/swiper1.png" alt="" srcset=""></div>
+            <img src="./image/swiper1.png" alt="" srcset=""></div> -->
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -70,12 +70,13 @@
     <!-- 栅格 -->
     <div class="row-box">
       <a name="tag1"></a>
-      <div class="row">
+      <div class="row" id="caselist">
+      <!-- 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <a href="./newsdetails.html" target="_blank">
             <div class="item-s">
               <div class="s-1">
-                <!-- <div class="d-1"></div> -->
+                /*<div class="d-1"></div>*/
                 <p>德克士</p>
                 <p>最有食欲的“香水大片”</p>
                 <p style="font-size: 14px;font-weight: normal;">以嗅觉为桥梁，促成德克士与气味图书馆跨界玩法，助力新品提前售罄。</p>
@@ -251,7 +252,7 @@
               </div>
             </div>
           </a>
-        </div>
+        </div> -->
         <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <div class="item-s">
             <div class="s-1">
@@ -323,8 +324,8 @@
         <p class="title2-p-1">合作伙伴</p>
         <p class="title2-p-2">PARTNER</p>
       </div>
-      <div class="banner-6-1">
-        <img src="./image/banner3.png" alt="">
+      <div class="banner-6-1" id="hzhb">
+        <!-- <img src="./image/banner3.png" alt=""> -->
       </div>
     </div>
     <div class="banner-6">
@@ -332,10 +333,10 @@
         <p class="title2-p-1">关于我们</p>
         <p class="title2-p-2">ABOUT US</p>
       </div>
-      <div class="title3">
-        <p>抹茶互动成立于2016年4月,创始成员均来自于4A广告公关公司、国内新锐互动广告公关公司,具有丰富的从业经历。</p>
+      <div class="title3" id="aboutus">
+        <!-- <p>抹茶互动成立于2016年4月,创始成员均来自于4A广告公关公司、国内新锐互动广告公关公司,具有丰富的从业经历。</p>
         <p>抹茶互动是一家专注于爆品力营销探索的社会化媒体公司,相信创意赋能生意,策略指导新玩法。</p>
-        <p>成立以来,先后服务过包括益海嘉里（金龙鱼母品牌）德克士、腾讯、58同城、赶集网、百草味、贝贝网、学大教育等客户。</p>
+        <p>成立以来,先后服务过包括益海嘉里（金龙鱼母品牌）德克士、腾讯、58同城、赶集网、百草味、贝贝网、学大教育等客户。</p> -->
       </div>
     </div>
     <div class="banner-7 row">
@@ -348,10 +349,10 @@
           <p class="title2-p-1">联系我们</p>
           <p class="title2-p-2">contact us</p>
         </div>
-        <div class="bottom-2-3 ">
-          <p>地址：<span>北京市 朝阳区 曙光西里 甲6号院8号楼4层507</span></p>
+        <div class="bottom-2-3" id="callus">
+          <!-- <p>地址：<span>北京市 朝阳区 曙光西里 甲6号院8号楼4层507</span></p>
           <p>电话：<span>+86 010-56037666</span></p>
-          <p>邮箱：<span>hr.mc@25lady.net</span></p>
+          <p>邮箱：<span>hr.mc@25lady.net</span></p> -->
         </div>
       </div>
       <div class="bottom-3 col-md-3 col-xs-12">
@@ -360,8 +361,10 @@
     </div>
   </div>
 </body>
+
 <script src="./js/swiper.js"> </script>
 <script src="./js/jquery.js"></script>
+<script src="./js/data.js"></script>
 <script>
   var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal', // 垂直切换选项

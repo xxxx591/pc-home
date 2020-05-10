@@ -11,10 +11,12 @@
   margin-right: 80px;
   flex: 1;
 }
-.sit-logo:last-of-type{
+
+.sit-logo:last-of-type {
   margin-right: 0px;
   width: 250px;
 }
+
 .sit-logo .p-1 {
   color: #2e2e2e;
   font-size: 22px;
@@ -24,7 +26,7 @@
   white-space: nowrap;
 }
 
- 
+
 
 .sit-logo .p-2 {
   font-size: 20px;
@@ -35,6 +37,11 @@
 
 .banner-4 {
   padding-bottom: 0;
+  margin: 0 10%;
+}
+
+.banner-4 img {
+  width: 100%;
 }
 
 .banner-6 .title3 {
@@ -77,4 +84,16 @@
   padding: 15px 50px;
   margin-top: 20px;
   letter-spacing: 4px;
+}
+
+#blank-url {
+  position: relative;
+}
+
+.blank-url {
+  position: absolute;
+  width: 280px;
+  height: 80px;
+  bottom: 0;
+  right: 0;
 }
